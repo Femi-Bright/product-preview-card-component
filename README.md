@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-DNHbO3wv-j](https://www.frontendmentor.io/solutions/product-preview-card-component-DNHbO3wv-j)
+- Live Site URL: [https://fb-product-preview-card-component.netlify.app/](https://fb-product-preview-card-component.netlify.app/)
 
 ## My process
 
