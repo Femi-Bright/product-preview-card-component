@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts */
+    --font-fraunces: 'Fraunces', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    /* colors primary */
+    --dark-cyan: #3c8067;
+    --cream: #f2ebe3;
+    /* colors neutral */
+    --very-dark-blue: #1c232b;
+    --dark-grayish-blue: #6c7289;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--cream);
+    display: grid;
+    font-size: 15px;
+    height: 100vh;
+    place-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        max-width: 600px;
+    }
+    picture {
+        width: 50%;
+    }
+}
+
+.card__image {
+    height: auto;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .card__image {
+        height: 100%;
+        object-fit: cover   ;
+        width: 100%;
+    }
+}
+.card__body {
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .card__body {
+        padding: 40px;
+        width: 50%;
+    }
+}
+
+.product-type {
+    color: var(--dark-cyan);
+    font-family: var(--font-montserrat);
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.product-name {
+    color: var(--very-dark-blue);
+    font-family: var(--font-fraunces);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-details {
+    color: var(--dark-grayish-blue);
+    font-family: var(--font-montserrat);
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.prices {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: var(--dark-cyan);
+    font-family: var(--font-fraunces);
+    font-size: 32px;
+}
+
+.price-slashed {
+    color: var(--dark-grayish-blue);
+    font-family: var(--font-montserrat);
+    margin-left: 25px;
+    text-decoration: line-through;
+}
+
+button.add-to-cart {
+    border: 0;
+    border-radius: 6px;
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--dark-cyan);
+    display: flex;
+    font-family: var(--font-montserrat);
+    justify-content: center;
+    padding: 15px;
+    transition: color ease 350ms;
+    width: 100%;
+}
+
+button.add-to-cart:hover {
+    background-color: var(--very-dark-blue);
+}
+
+button.add-to-cart svg {
+    margin-right: 8px;
+}
